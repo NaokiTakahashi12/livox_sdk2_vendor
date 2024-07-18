@@ -34,8 +34,8 @@ if(NOT livox_sdk2_FOUND)
   list(APPEND extra_cmake_args "-D CMAKE_POSITION_INDEPENDENT_CODE=ON")
   include(ExternalProject)
   externalproject_add(livox_sdk2_${livox_sdk2_package_version}
-    GIT_REPOSITORY https://github.com/Livox-SDK/Livox-SDK2.git
-    GIT_TAG v${livox_sdk2_package_version}
+    GIT_REPOSITORY https://github.com/NaokiTakahashi12/Livox-SDK2.git
+    GIT_TAG fix/include-cstdint
     CMAKE_ARGS ${extra_cmake_args}
   )
   install(
